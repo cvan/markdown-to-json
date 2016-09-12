@@ -1,11 +1,11 @@
 # Markdown YAML front-matter to JSON
 
-`m2j.js` is used to read a folder of Markdown files, pulling out the YAML front matter from each, and saving it all as a JSON object.
+`m2j` is used to read a folder of Markdown files, pulling out the YAML front matter from each, and saving it all as a JSON blob.
 
 This is especially useful if you have a folder full of Markdown files
 that you want scanned and processed into a single JSON file, which can
 then be consumed by Angular on the client, cached in a Node server, or
-saved in a nosql database.
+saved in a NoSQL database.
 
 In addition to moving the YAML to JSON, a few extra elements are created: 
 
@@ -17,7 +17,7 @@ In addition to moving the YAML to JSON, a few extra elements are created:
 _Example_
 
 ```
-% m2.js --help
+% m2 --help
 
   Usage: m2j [options] <files>
 
@@ -29,7 +29,7 @@ _Example_
     -p --pretty              format JSON with newlines
     -c --content             include the full content of the file unabridged
     -o --outfile <filename>  filename to save json to [output.json]
-    
+
 
 % m2j.js lottery.md
 ```
